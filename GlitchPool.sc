@@ -79,7 +79,7 @@ GlitchPool {
 				# oscAddr, objName, argIndex, argValue, group, subGroup = msg;
 
 				// check if this is for GlitchPool and if the message is coming from OSCthulhu
-				if(group.asString == "GP" && addr.port == OSCthulhu.clientPort,{
+				if(group.asString == "GP" && addr == NetAddr("127.0.0.1",OSCthulhu.clientPort),{
 
 					if(subGroup.asString == "u",{
 						switch(
