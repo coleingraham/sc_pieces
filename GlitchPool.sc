@@ -10,12 +10,15 @@ GlitchPool {
 	classvar osc; // holds all OSCdefs used by the class
 	classvar <users;
 
-	* new {
+	* new {|portlist|
+		if(portlist.isNil,{ portlist = [NetAddr.langPort,32244] });
 		users = Dictionary();
 		osc = List();
 		this.setupOSClisteners;
-		OSCthulhu.changePorts([57120,32244]);
+		OSCthulhu.changePorts(portlist);
 		OSCthulhu.login("GP");
+
+		GlitchPoolHUD();
 	}
 
 	* setupOSClisteners {
@@ -113,6 +116,7 @@ GlitchPool {
 	}
 
 	* free {
+		GlitchPoolHUD.close;
 		osc.collect({|def| def.permanent_(false); def.free; });
 		OSCthulhu.cleanup("GP");
 		thisProcess.interpreter.codeDump = nil;
@@ -130,4 +134,69 @@ GlitchPoolUser {
 		^super.newCopyArgs(userName,code,runCount);
 	}
 
+}
+
+GlitchPoolHUD {
+	classvar osc;
+	classvar win, userList, varList;
+
+	* new {
+		this.setupOSClisteners;
+		this.makeWin;
+	}
+
+	* setupOSClisteners {
+		osc = List();
+
+		osc.add(
+			OSCthulhu.onAddSyncObject("updateHUDUsers",{
+				var users = List();
+				GlitchPool.users.do{|u|
+					users.add(u.userName);
+				};
+				{userList.items = users.array; userList.refresh}.defer;
+			});
+		);
+
+		osc.add(
+			OSCthulhu.onSetSyncArg("updateHUDVars",{
+				{varList.items = currentEnvironment.keys.asArray;}.defer;
+			});
+		);
+
+		osc.collect({|def| def.permanent_(true); });
+	}
+
+	* makeWin {
+		var users = List();
+		userList = ListView();
+		GlitchPool.users.do{|u|
+			users.add(u.userName);
+		};
+		userList.items = users.array;
+
+		varList = ListView();
+		varList.items = currentEnvironment.keys.asArray;
+
+		win = Window("GlitchPool HUD",Rect(0,0,200,700));
+		win.front;
+		win.view.layout_(
+			VLayout(
+				StaticText().string_("Users"),
+				[userList,stretch:1],
+				StaticText().string_("Global Vars"),
+				[varList,stretch:5]
+			)
+		);
+
+		win.onClose_({ this.free; });
+	}
+
+	* close {
+		win.close;
+	}
+
+	* free {
+		osc.collect({|def| def.permanent_(false); def.free; });
+	}
 }
