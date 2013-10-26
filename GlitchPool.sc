@@ -33,13 +33,15 @@ GlitchPool {
 				thisProcess.interpreter.codeDump_({|code|
 					var runCount;
 					// prevent any code using .unixCmd
-					if(code.find("unixCmd").isNil,{
+					if(code.find("unixCmd").isNil &&
+						code.find("interpret").isNil &&
+						code.find("compile").isNil,{
 						runCount = GlitchPool.users[OSCthulhu.userName.asString].runCount.asInteger;
 						GlitchPool.users[OSCthulhu.userName.asString].runCount_((runCount+1).asInteger);
 						OSCthulhu.setSyncArg(OSCthulhu.userName,0,code.asString);
 						OSCthulhu.setSyncArg(OSCthulhu.userName,1,(runCount+1).asInteger);
 						},{
-							"GlitchPool will not send code using .unixCmd".warn;
+							"GlitchPool will not send that!!!".warn;
 					});
 				});
 
@@ -89,7 +91,9 @@ GlitchPool {
 							argIndex,
 							0, {
 								// prevent any code using .unixCmd
-								if(argValue.asString.find("unixCmd").isNil,{
+								if(argValue.asString.find("unixCmd").isNil &&
+									argValue.asString.find("interpret").isNil &&
+									argValue.asString.find("compile").isNil,{
 									GlitchPool.users[objName.asString].code = argValue.asString;
 								});
 							},
