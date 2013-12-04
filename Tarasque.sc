@@ -104,7 +104,7 @@ Tarasque : ManticorePiece
 		];
 
 		scoreText = [
-//			"For testing only.",
+			//			"For testing only.",
 
 			"\"Dusty Combo\"\n\n"
 			"add a DustyCombo\n"
@@ -158,85 +158,85 @@ Tarasque : ManticorePiece
 		];
 
 		scoreObjects = [
-		/*
+			/*
 			[	// [0] Everything for testing
-				"m_BasicGrooveCombo",
-				"c_SteadyBeat.I",
-				"c_SteadyBeat.II",
-				"c_SteadyBeat.III",
-				"c_SteadyBeat.IV",
-				"c_SteadyBeat.V",
-				"c_SteadyBeat.VI",
-				"c_SteadyBeat.VII",
-				"c_Dusty",
-				"p_WholeNoteWalk",
-				"p_Constant.whole",
-				"p_Constant.half",
-				"p_Constant.quarter",
-				"p_Constant.offBeat",
-				"p_Constant.eighth",
-				"p_1of3.whole",
-				"p_1of3.half",
-				"p_1of3.quarter",
-				//"p_1of3.offBeat",
-				//"p_1of3.eighth",
-				"p_2of3.whole",
-				"p_2of3.half",
-				"p_2of3.quarter",
-				//"p_2of3.offBeat",
-				"p_2of3.eighth",
-				"p_NineTrip",
-				"p_Pentambeter",
-				"p_FiveShuffle",
-				"p_IceCreamPig",
-				"p_WoodenOctopus",
-				"r_Clicker",
-				"r_DonkeyLinCong",
-				"r_QuadC",
-				"r_BabyRats",
-				"r_WhiteBurst",
-				"r_Beeeeeep",
-				"r_AtariBlast",
-				"r_LatoocarfianBlast",
-				"r_RoboSpeaks",
-				"r_SawSwarm",
-				"r_MetalPercussion",
-				"r_ModNoise",
-				"r_ChaosMarimba",
-				"r_ChaosGeometry.low",
-				"r_ChaosGeometry.mid",
-				"r_ChaosGeometry.high",
-				"r_Henonator",
-				"r_GbmanFlash",
-				"r_RosslerL",
-				"r_FincoSprottL",
-				"r_ResKick",
-				"r_OakStyle.one",
-				"r_OakStyle.two",
-				"r_OakStyle.four",
-				"r_RUPulse",
-				"r_RUBright.1:1",
-				"r_RUBright.9:8",
-				"r_RUBright.8:7",
-				"d_DeadAnimalJuice",
-//				"r_FPJam.1:1",
-//				"r_FPJam.10:9",
-//				"r_FPJam.9:8",
-//				"r_FPJam.8:7",
-//				"r_FPJam.7:6",
-//				"r_FPJam.13:11",
-//				"r_FPJam.6:5",
-//				"r_FPJam.5:4",
-//				"r_FPJam.4:3",
-//				"r_FPJam.3:2",
-//				"r_FPJam.5:3",
-//				"r_FPJam.7:4",
-//				"r_FPJam.16:9",
-//				"r_FPJam.9:5",
-				"d_ChirpSpiralFB",
-				"d_PhaseModFB",
-				"d_PlatapusFB",
-				"d_DelayFB"
+			"m_BasicGrooveCombo",
+			"c_SteadyBeat.I",
+			"c_SteadyBeat.II",
+			"c_SteadyBeat.III",
+			"c_SteadyBeat.IV",
+			"c_SteadyBeat.V",
+			"c_SteadyBeat.VI",
+			"c_SteadyBeat.VII",
+			"c_Dusty",
+			"p_WholeNoteWalk",
+			"p_Constant.whole",
+			"p_Constant.half",
+			"p_Constant.quarter",
+			"p_Constant.offBeat",
+			"p_Constant.eighth",
+			"p_1of3.whole",
+			"p_1of3.half",
+			"p_1of3.quarter",
+			//"p_1of3.offBeat",
+			//"p_1of3.eighth",
+			"p_2of3.whole",
+			"p_2of3.half",
+			"p_2of3.quarter",
+			//"p_2of3.offBeat",
+			"p_2of3.eighth",
+			"p_NineTrip",
+			"p_Pentambeter",
+			"p_FiveShuffle",
+			"p_IceCreamPig",
+			"p_WoodenOctopus",
+			"r_Clicker",
+			"r_DonkeyLinCong",
+			"r_QuadC",
+			"r_BabyRats",
+			"r_WhiteBurst",
+			"r_Beeeeeep",
+			"r_AtariBlast",
+			"r_LatoocarfianBlast",
+			"r_RoboSpeaks",
+			"r_SawSwarm",
+			"r_MetalPercussion",
+			"r_ModNoise",
+			"r_ChaosMarimba",
+			"r_ChaosGeometry.low",
+			"r_ChaosGeometry.mid",
+			"r_ChaosGeometry.high",
+			"r_Henonator",
+			"r_GbmanFlash",
+			"r_RosslerL",
+			"r_FincoSprottL",
+			"r_ResKick",
+			"r_OakStyle.one",
+			"r_OakStyle.two",
+			"r_OakStyle.four",
+			"r_RUPulse",
+			"r_RUBright.1:1",
+			"r_RUBright.9:8",
+			"r_RUBright.8:7",
+			"d_DeadAnimalJuice",
+			//				"r_FPJam.1:1",
+			//				"r_FPJam.10:9",
+			//				"r_FPJam.9:8",
+			//				"r_FPJam.8:7",
+			//				"r_FPJam.7:6",
+			//				"r_FPJam.13:11",
+			//				"r_FPJam.6:5",
+			//				"r_FPJam.5:4",
+			//				"r_FPJam.4:3",
+			//				"r_FPJam.3:2",
+			//				"r_FPJam.5:3",
+			//				"r_FPJam.7:4",
+			//				"r_FPJam.16:9",
+			//				"r_FPJam.9:5",
+			"d_ChirpSpiralFB",
+			"d_PhaseModFB",
+			"d_PlatapusFB",
+			"d_DelayFB"
 			],
 			*/
 			[	// Dusty Combo
@@ -379,7 +379,7 @@ Tarasque : ManticorePiece
 		];
 
 		scoreEffects = [
-//			"CrunchVerb.gain3",				// [0]
+			//			"CrunchVerb.gain3",				// [0]
 			"CrunchVerb.gain1",				// [Dusty]
 			"CrunchVerb.gain3",				// [FB1]
 			"CrunchVerb.gain6",				// [FB2]
@@ -431,7 +431,7 @@ Tarasque : ManticorePiece
 				Manticore.updateScore(scoreText[scoreIndex]);
 			});
 
-		})
+			})
 		);
 
 		// setSyncArg
@@ -454,7 +454,7 @@ Tarasque : ManticorePiece
 					}
 				)
 			});
-		})
+			})
 		);
 	}
 
@@ -479,261 +479,261 @@ Tarasque : ManticorePiece
 	{
 		// colotomy
 		(
-		SynthDef("SteadyBeat",{|out = 100, rate=4.5|
-			var whole, half, quarter, offBeat, eighth;
+			SynthDef("SteadyBeat",{|out = 100, rate=4.5|
+				var whole, half, quarter, offBeat, eighth;
 
-			whole = Impulse.ar(rate*0.25);
-			half = Impulse.ar(rate*0.5);
-			quarter = Impulse.ar(rate);
-			offBeat = Impulse.ar(rate,0.5);
-			eighth = Impulse.ar(rate*2);
+				whole = Impulse.ar(rate*0.25);
+				half = Impulse.ar(rate*0.5);
+				quarter = Impulse.ar(rate);
+				offBeat = Impulse.ar(rate,0.5);
+				eighth = Impulse.ar(rate*2);
 
-			Out.ar(out,[whole, half, quarter, offBeat, eighth]);
-		},
-		variants: (
-			I: [ rate: 2.8571428571429 ],
-			II: [ rate: 3.5714285714286 ],
-			III: [ rate: 5 ],
-			IV: [ rate: 5.7142857142857 ],
-			V: [ rate: 7.8571428571429 ],
-			VI: [ rate: 9.2857142857143 ],
-			VII: [ rate: 11.428571428571 ],
-		)
-		).store;
+				Out.ar(out,[whole, half, quarter, offBeat, eighth]);
+				},
+				variants: (
+					I: [ rate: 2.8571428571429 ],
+					II: [ rate: 3.5714285714286 ],
+					III: [ rate: 5 ],
+					IV: [ rate: 5.7142857142857 ],
+					V: [ rate: 7.8571428571429 ],
+					VI: [ rate: 9.2857142857143 ],
+					VII: [ rate: 11.428571428571 ],
+				)
+			).store;
 		);
 
 		(
-		SynthDef("Dusty",{|out = 100|
-			var rate, whole, half, quarter, offBeat, eighth;
+			SynthDef("Dusty",{|out = 100|
+				var rate, whole, half, quarter, offBeat, eighth;
 
-			rate = 4;
+				rate = 4;
 
-			whole = Dust.ar(rate*0.3);
-			half = Dust.ar(rate*0.6);
-			quarter = Dust.ar(rate);
-			offBeat = Dust.ar(rate,0.5);
-			eighth = Dust.ar(rate*2);
+				whole = Dust.ar(rate*0.3);
+				half = Dust.ar(rate*0.6);
+				quarter = Dust.ar(rate);
+				offBeat = Dust.ar(rate,0.5);
+				eighth = Dust.ar(rate*2);
 
-			Out.ar(out,[whole, half, quarter, offBeat, eighth]);
-		}).store;
+				Out.ar(out,[whole, half, quarter, offBeat, eighth]);
+			}).store;
 		);
 
 		(
-		SynthDef("OakRamp",{|out = 100|
-			var rate, whole, half, quarter, offBeat, eighth;
+			SynthDef("OakRamp",{|out = 100|
+				var rate, whole, half, quarter, offBeat, eighth;
 
-			//rate = EnvGen.kr(Env.new([0.5,50,1000], [60*9.75,60*4.25], [\exp,\lin]), 1);
-			rate = EnvGen.kr(Env.new([0.5,50,1000], [60*2.75,60*1.25], [\exp,\lin]), 1);
+				//rate = EnvGen.kr(Env.new([0.5,50,1000], [60*9.75,60*4.25], [\exp,\lin]), 1);
+				rate = EnvGen.kr(Env.new([0.5,50,1000], [60*2.75,60*1.25], [\exp,\lin]), 1);
 
-			whole = Impulse.ar(rate*0.3);
-			half = Impulse.ar(rate*0.6);
-			quarter = Impulse.ar(rate);
-			offBeat = Impulse.ar(rate,0.5);
-			eighth = Impulse.ar(rate*2);
+				whole = Impulse.ar(rate*0.3);
+				half = Impulse.ar(rate*0.6);
+				quarter = Impulse.ar(rate);
+				offBeat = Impulse.ar(rate,0.5);
+				eighth = Impulse.ar(rate*2);
 
-			Out.ar(out,[whole, half, quarter, offBeat, eighth]);
-		}).store;
+				Out.ar(out,[whole, half, quarter, offBeat, eighth]);
+			}).store;
 		);
 
 		(
-		SynthDef("OakFinale",{|out = 100|
-			var rate, whole, half, quarter, offBeat, eighth;
+			SynthDef("OakFinale",{|out = 100|
+				var rate, whole, half, quarter, offBeat, eighth;
 
-			//rate = EnvGen.kr(Env.new([0.5,50,1000], [60*9.75,60*4.25], [\exp,\lin]), 1);
-			rate = LFNoise2.kr(LFNoise0.kr(1).range(0.2,2)).range(800,1200);
-			whole = Impulse.ar(rate*0.3);
-			half = Impulse.ar(rate*0.6);
-			quarter = Impulse.ar(rate);
-			offBeat = Impulse.ar(rate,0.5);
-			eighth = Impulse.ar(rate*2);
+				//rate = EnvGen.kr(Env.new([0.5,50,1000], [60*9.75,60*4.25], [\exp,\lin]), 1);
+				rate = LFNoise2.kr(LFNoise0.kr(1).range(0.2,2)).range(800,1200);
+				whole = Impulse.ar(rate*0.3);
+				half = Impulse.ar(rate*0.6);
+				quarter = Impulse.ar(rate);
+				offBeat = Impulse.ar(rate,0.5);
+				eighth = Impulse.ar(rate*2);
 
-			Out.ar(out,[whole, half, quarter, offBeat, eighth]);
-		}).store;
+				Out.ar(out,[whole, half, quarter, offBeat, eighth]);
+			}).store;
 		);
 
 		// patterns
 		(
-		SynthDef("Constant",{|in = 100, out = 100, index=0|
-			var input, sig;
+			SynthDef("Constant",{|in = 100, out = 100, index=0|
+				var input, sig;
 
-			input = In.ar(in+index,1);
+				input = In.ar(in+index,1);
 
-			sig = input;
+				sig = input;
 
-			Out.ar(out, sig);
-		},
-		variants: (
-			whole: [ index: 0 ],
-			half: [ index: 1 ],
-			quarter: [ index: 2 ],
-			offBeat: [ index: 3 ],
-			eighth: [ index: 4 ]
-		)).store;
+				Out.ar(out, sig);
+				},
+				variants: (
+					whole: [ index: 0 ],
+					half: [ index: 1 ],
+					quarter: [ index: 2 ],
+					offBeat: [ index: 3 ],
+					eighth: [ index: 4 ]
+			)).store;
 		);
 
 		(
-		SynthDef("NineTrip",{|in = 100, out = 100|
-			var input, sig, seq, trig;
+			SynthDef("NineTrip",{|in = 100, out = 100|
+				var input, sig, seq, trig;
 
-			input = In.ar(in,5);
+				input = In.ar(in,5);
 
-			seq = Dseq([1,1,0,1,0,1,1,1,0],inf);
+				seq = Dseq([1,1,0,1,0,1,1,1,0],inf);
 
-			trig = Select.ar(LFSaw.kr(0.3).range(0,5).floor, input);
+				trig = Select.ar(LFSaw.kr(0.3).range(0,5).floor, input);
 
-			sig = trig * Demand.ar(trig, 0, seq);
+				sig = trig * Demand.ar(trig, 0, seq);
 
-			Out.ar(out, sig);
-		}).store;
+				Out.ar(out, sig);
+			}).store;
 		);
 
 		(
-		SynthDef("Pentambeter",{|in = 100, out = 100|
-			var input, sig, seq, trig;
+			SynthDef("Pentambeter",{|in = 100, out = 100|
+				var input, sig, seq, trig;
 
-			input = In.ar(in,5);
+				input = In.ar(in,5);
 
-			seq = Dseq([1,0,1,1,0],inf);
+				seq = Dseq([1,0,1,1,0],inf);
 
-			trig = Select.ar(LFSaw.kr(0.3).range(0,3).floor, [input[0],input[2],input[4]]);
+				trig = Select.ar(LFSaw.kr(0.3).range(0,3).floor, [input[0],input[2],input[4]]);
 
-			sig = trig * Demand.ar(trig, 0, seq);
+				sig = trig * Demand.ar(trig, 0, seq);
 
-			Out.ar(out, sig);
-		}).store;
+				Out.ar(out, sig);
+			}).store;
 		);
 
 		(
-		SynthDef("1of3",{|in = 100, out = 100, index=0|
-			var input, sig;
+			SynthDef("1of3",{|in = 100, out = 100, index=0|
+				var input, sig;
 
-			input = In.ar(in+index,1);
+				input = In.ar(in+index,1);
 
-			sig = PulseDivider.ar(input, 3);
+				sig = PulseDivider.ar(input, 3);
 
-			Out.ar(out, sig);
-		},
-		variants: (
-			whole: [ index: 0 ],
-			half: [ index: 1 ],
-			quarter: [ index: 2 ],
-			offBeat: [ index: 3 ],
-			eighth: [ index: 4 ]
-		)).store;
+				Out.ar(out, sig);
+				},
+				variants: (
+					whole: [ index: 0 ],
+					half: [ index: 1 ],
+					quarter: [ index: 2 ],
+					offBeat: [ index: 3 ],
+					eighth: [ index: 4 ]
+			)).store;
 		);
 
 		(
-		SynthDef("2of3",{|in = 100, out = 100, index=0|
-			var input, sig, seq;
+			SynthDef("2of3",{|in = 100, out = 100, index=0|
+				var input, sig, seq;
 
-			input = In.ar(in+index,1);
+				input = In.ar(in+index,1);
 
-			seq = Dseq([1,1,0],inf);
+				seq = Dseq([1,1,0],inf);
 
-			sig = Demand.ar(input, 0, seq);
+				sig = Demand.ar(input, 0, seq);
 
-			sig = input * sig;
+				sig = input * sig;
 
-			Out.ar(out, sig);
-		},
-		variants: (
-			whole: [ index: 0 ],
-			half: [ index: 1 ],
-			quarter: [ index: 2 ],
-			offBeat: [ index: 3 ],
-			eighth: [ index: 4 ]
-		)).store;
+				Out.ar(out, sig);
+				},
+				variants: (
+					whole: [ index: 0 ],
+					half: [ index: 1 ],
+					quarter: [ index: 2 ],
+					offBeat: [ index: 3 ],
+					eighth: [ index: 4 ]
+			)).store;
 		);
 
 		(
-		SynthDef("WholeNoteWalk",{|in = 100, out = 100|
-			var input, sig, seq;
+			SynthDef("WholeNoteWalk",{|in = 100, out = 100|
+				var input, sig, seq;
 
-			input = In.ar(in,5);
+				input = In.ar(in,5);
 
-			seq = Dseq([1,0,1,0,0,1,0],inf);
+				seq = Dseq([1,0,1,0,0,1,0],inf);
 
-			sig = input[0] * Demand.ar(input[0], 0, seq);
+				sig = input[0] * Demand.ar(input[0], 0, seq);
 
-			Out.ar(out, sig);
-		}).store;
+				Out.ar(out, sig);
+			}).store;
 		);
 
 		(
-		SynthDef("FiveShuffle",{|in = 100, out = 100|
-			var input, sig, seq;
+			SynthDef("FiveShuffle",{|in = 100, out = 100|
+				var input, sig, seq;
 
-			input = In.ar(in,5);
+				input = In.ar(in,5);
 
-			input = Select.ar(TChoose.kr(Dust.kr(Rand(0.2,1)),[2,3,5]), input);
+				input = Select.ar(TChoose.kr(Dust.kr(Rand(0.2,1)),[2,3,5]), input);
 
-			seq = Dfsm(
-				[
-					[1],
-					Dshuf([1,0,0,1,1]), [0,0,0,1,1],
-					Dshuf([0,1,1,0,0]), [0,0,1,1,1]
-				],
-				inf
-			);
+				seq = Dfsm(
+					[
+						[1],
+						Dshuf([1,0,0,1,1]), [0,0,0,1,1],
+						Dshuf([0,1,1,0,0]), [0,0,1,1,1]
+					],
+					inf
+				);
 
-			sig = Demand.ar(input, 0, seq);
+				sig = Demand.ar(input, 0, seq);
 
-			sig = input * sig;
+				sig = input * sig;
 
-			Out.ar(out, sig);
-		}).store;
+				Out.ar(out, sig);
+			}).store;
 		);
 
 		(
-		SynthDef("IceCreamPig",{|in = 100, out = 100|
-			var input, sig, seq;
+			SynthDef("IceCreamPig",{|in = 100, out = 100|
+				var input, sig, seq;
 
-			input = In.ar(in,5);
+				input = In.ar(in,5);
 
-			input = input[2];
+				input = input[2];
 
-			seq = Dfsm(
-				[
-					[1],
-					Dseq([1,0,0,0,0,0,0,1,1,0,0]), [0,0,0,1,1],
-					Dseq([1,0,0,1,1]), [0,0,1,1,1,2],
-					Dseq([1,0,0,1,0,1,0]), [1,1,2,2,2,2,2]
-				],
-				inf
-			);
+				seq = Dfsm(
+					[
+						[1],
+						Dseq([1,0,0,0,0,0,0,1,1,0,0]), [0,0,0,1,1],
+						Dseq([1,0,0,1,1]), [0,0,1,1,1,2],
+						Dseq([1,0,0,1,0,1,0]), [1,1,2,2,2,2,2]
+					],
+					inf
+				);
 
-			sig = Demand.ar(input, 0, seq);
+				sig = Demand.ar(input, 0, seq);
 
-			sig = input * sig;
+				sig = input * sig;
 
-			Out.ar(out, sig);
-		}).store;
+				Out.ar(out, sig);
+			}).store;
 		);
 
 		(
-		SynthDef("WoodenOctopus",{|in = 100, out = 100|
-			var input, sig, seq;
+			SynthDef("WoodenOctopus",{|in = 100, out = 100|
+				var input, sig, seq;
 
-			input = In.ar(in,5);
+				input = In.ar(in,5);
 
-			input = input[1];
+				input = input[1];
 
-			seq = Dfsm(
-				[
-					[1],
-					Dseq([1,0,0,0,1,0,1,0,0,0,0]), [0,0,0,1,1],
-					Dseq([1,0,1,0,1,1,0,0,1]), [0,1,2],
-					Dseq([1,0,0,1,0,1,0]), [0,1,1,2,2,2,2,2]
-				],
-				inf
-			);
+				seq = Dfsm(
+					[
+						[1],
+						Dseq([1,0,0,0,1,0,1,0,0,0,0]), [0,0,0,1,1],
+						Dseq([1,0,1,0,1,1,0,0,1]), [0,1,2],
+						Dseq([1,0,0,1,0,1,0]), [0,1,1,2,2,2,2,2]
+					],
+					inf
+				);
 
-			sig = Demand.ar(input, 0, seq);
+				sig = Demand.ar(input, 0, seq);
 
-			sig = input * sig;
+				sig = input * sig;
 
-			Out.ar(out, sig);
-		}).store;
+				Out.ar(out, sig);
+			}).store;
 		);
 
 		// drums
@@ -762,21 +762,21 @@ Tarasque : ManticorePiece
 						Decay2.ar(
 							Impulse.ar(den,0,LFNoise1.kr(300))
 							,0.05,0.2)
-						)
+					)
 					,LFNoise1.kr(10).range(20,500) * TRand.ar(1,10,trig)),
 				1/(
-						SinOsc.kr(40).range(freq,freq*1.5)+LFNoise1.kr(1,freq/4).round(10)
-					)
+					SinOsc.kr(40).range(freq,freq*1.5)+LFNoise1.kr(1,freq/4).round(10)
+				)
 				,3);
 
 			bufA = LocalBuf.new(SampleRate.ir * 0.01, 1);
 
 			sig = BufAllpassC.ar(
-						bufA,
-						Ringz.ar(
-							sig, {ExpRand(100, 6000)}.dup(100),{ExpRand(1, 2)}.dup(100)
-						).mean
-					,0.01,4,1.3);
+				bufA,
+				Ringz.ar(
+					sig, {ExpRand(100, 6000)}.dup(100),{ExpRand(1, 2)}.dup(100)
+				).mean
+				,0.01,4,1.3);
 
 			sig = LPF.ar(sig, Rand(1000,3000)) * 0.34;
 		});
@@ -812,11 +812,11 @@ Tarasque : ManticorePiece
 
 		this.rhythmSynthWrap("LatoocarfianBlast",{|argA,argB,trig|
 			(
-			(
-				LatoocarfianC.ar(
-					Rand(10, SampleRate.ir/10) * TRand.ar(2,20,trig)
-				)*TRand.ar(1,3,trig)
-			).distort * TRand.ar(2,20,trig)
+				(
+					LatoocarfianC.ar(
+						Rand(10, SampleRate.ir/10) * TRand.ar(2,20,trig)
+					)*TRand.ar(1,3,trig)
+				).distort * TRand.ar(2,20,trig)
 			).softclip;
 		});
 
@@ -837,9 +837,9 @@ Tarasque : ManticorePiece
 
 			sig = Mix.new(
 				Pulse.ar(
-				LFNoise2.ar(deviationHz.dup(30), deviation.dup(30),  center),
-				Rand(0.2,0.8),
-				0.05
+					LFNoise2.ar(deviationHz.dup(30), deviation.dup(30),  center),
+					Rand(0.2,0.8),
+					0.05
 				)
 			);
 
@@ -856,20 +856,20 @@ Tarasque : ManticorePiece
 			freq = TRand.ar(3,70,trig);
 
 			sig = Resonz.ar(
-					SinOsc.ar(
-						LFSaw.kr(
-							LFNoise1.ar(
-								1, 200, 250
-								),
-							0,freq,freq+150
-							),
-						0,0.3
+				SinOsc.ar(
+					LFSaw.kr(
+						LFNoise1.ar(
+							1, 200, 250
 						),
+						0,freq,freq+150
+					),
+					0,0.3
+				),
 				SinOsc.kr(
 					TRand.ar(50,150,trig)
-					),
+				),
 				10
-				);
+			);
 
 			sig = sig.fold2.(0.5) * 0.62;
 
@@ -885,30 +885,30 @@ Tarasque : ManticorePiece
 			filterModFreq = TRand.ar(0,100,trig);
 
 			sig = LPF.ar(
-			        SinOsc.ar(
-			            freq,SinOsc.kr(
-			                phasemod,0,2pi
-			                ),
-			            1
-			        ),
-			    SinOsc.kr(
-			        filterModFreq,0,1400,1600
-			        ),
-			    SinOsc.kr(
-			        amfreq,0,0.15,0.15
-			        )
-			    );
+				SinOsc.ar(
+					freq,SinOsc.kr(
+						phasemod,0,2pi
+					),
+					1
+				),
+				SinOsc.kr(
+					filterModFreq,0,1400,1600
+				),
+				SinOsc.kr(
+					amfreq,0,0.15,0.15
+				)
+			);
 
 			buf = LocalBuf.new(SampleRate.ir * 0.01, 1);
 
 			sig = LPF.ar(
-					BufAllpassC.ar(
-						buf,
-						Ringz.ar(
-							sig,
-							{exprand(10, 2000)}.dup(10)
-							,{ExpRand(0.2, 2)}.dup(10)).mean,0.01,4,1.3),
-					1000) * 0.34;
+				BufAllpassC.ar(
+					buf,
+					Ringz.ar(
+						sig,
+						{exprand(10, 2000)}.dup(10)
+						,{ExpRand(0.2, 2)}.dup(10)).mean,0.01,4,1.3),
+				1000) * 0.34;
 		});
 
 		this.rhythmSynthWrap("ChaosMarimba",{|argA,argB,trig|
@@ -917,26 +917,26 @@ Tarasque : ManticorePiece
 			freq = TRand.ar(5,800,trig);
 
 			sig = Resonz.ar(
-					Ringz.ar(
-						Impulse.ar(
-							LFNoise2.kr(
-								Rand(0.5,2)
-							).range(10,20),
-							0,1
-							),
-						freq, 3
+				Ringz.ar(
+					Impulse.ar(
+						LFNoise2.kr(
+							Rand(0.5,2)
+						).range(10,20),
+						0,1
 					),
+					freq, 3
+				),
 				220, TRand.ar(0.005,0.25,trig)
 			);
 
 			buf = LocalBuf.new(SampleRate.ir * 0.01, 1);
 
 			sig = BufAllpassC.ar(
-					buf,
-					Ringz.ar(
-						sig*0.5,
-						{exprand(100, 20000)}.dup(10)
-						,{exprand(1, 4)}.dup(10)).mean,0.01,4,1.3);
+				buf,
+				Ringz.ar(
+					sig*0.5,
+					{exprand(100, 20000)}.dup(10)
+					,{exprand(1, 4)}.dup(10)).mean,0.01,4,1.3);
 
 			sig = Decay2.ar(sig,0.005,0.1,0.33).fold2.(0.5);
 		});
@@ -954,12 +954,12 @@ Tarasque : ManticorePiece
 
 		this.rhythmSynthWrap("Beeeeeep",{|argA,argB,trig|
 			Clip.ar(
-			(Mix(
-				Beep.ar(
-					LFNoise1.kr(TRand.ar(0.5,15,trig)).range(TRand.ar(0.1,50,trig),TRand.ar(0.1,50,trig)),
-					LFPulse.kr(TRand.ar(2.5,50))
-				)
-			).dup(10)
+				(Mix(
+					Beep.ar(
+						LFNoise1.kr(TRand.ar(0.5,15,trig)).range(TRand.ar(0.1,50,trig),TRand.ar(0.1,50,trig)),
+						LFPulse.kr(TRand.ar(2.5,50))
+					)
+					).dup(10)
 			), -1, 1) * 1.3;
 		});
 
@@ -977,9 +977,9 @@ Tarasque : ManticorePiece
 
 		this.rhythmSynthWrap("FincoSprottL",{|argA,argB,trig|
 			(
-			FincoSprottL.ar(
-				Rand(500,SampleRate.ir/10) * TRand.ar(1,10,trig)
-			) * TRand.ar(0.4,2,trig)
+				FincoSprottL.ar(
+					Rand(500,SampleRate.ir/10) * TRand.ar(1,10,trig)
+				) * TRand.ar(0.4,2,trig)
 			).softclip * 1.3;
 		});
 
@@ -1002,9 +1002,9 @@ Tarasque : ManticorePiece
 
 		this.rhythmSynthWrap("BabyRats",{|argA,argB,trig|
 			(
-			StandardL.ar(
-				Rand(2, SampleRate.ir/10) * TRand.ar(1,10,trig)
-			) * TRand.ar(0.5,5,trig)
+				StandardL.ar(
+					Rand(2, SampleRate.ir/10) * TRand.ar(1,10,trig)
+				) * TRand.ar(0.5,5,trig)
 			).distort * 1.3;
 		});
 
@@ -1026,28 +1026,28 @@ Tarasque : ManticorePiece
 
 			sig = sig.fold2(0.7);
 
-		},
-		(
-			"low": [ loA: 20, hiA: 30, loB: 2, hiB: 5 ],
-			"mid": [ loA: 500, hiA: 700, loB: 9, hiB: 12 ],
-			"high": [ loA: 2000, hiA: 3000, loB: 17, hiB: 20 ]
-		),
-		decayTime: 0.13);
+			},
+			(
+				"low": [ loA: 20, hiA: 30, loB: 2, hiB: 5 ],
+				"mid": [ loA: 500, hiA: 700, loB: 9, hiB: 12 ],
+				"high": [ loA: 2000, hiA: 3000, loB: 17, hiB: 20 ]
+			),
+			decayTime: 0.13);
 
 		// pitched dums
 		// TODO: make a wrapper for OakStyle
 		(
-		SynthDef("OakStyle",{|amp=1.0, fund = 440, out=100, in=100, gate=1, vol=1|
+			SynthDef("OakStyle",{|amp=1.0, fund = 440, out=100, in=100, gate=1, vol=1|
 				var sig, input, dist, gateing, a, b, f, n = inf, pulseRate, trig, env, buf1, buf2;
 
 				input = Impulse.ar(LFNoise2.kr(LFNoise0.kr(1).range(0.2,2)).range(800,1200));//In.ar(in,1);
 
-			   trig = input;
+				trig = input;
 
-			   pulseRate = Timer.ar(trig);
-			   pulseRate.linlin(1,1/2000,0.5,1000);
+				pulseRate = Timer.ar(trig);
+				pulseRate.linlin(1,1/2000,0.5,1000);
 
-			   vol = Lag.kr(vol,0.5);
+				vol = Lag.kr(vol,0.5);
 
 				a = Dfsm([
 					[0],
@@ -1058,45 +1058,45 @@ Tarasque : ManticorePiece
 				], n);
 				b = Demand.ar(trig, 0, a);
 
-			   gateing = EnvGen.ar(Env.perc(0.001,1,1,'linear'),input);
+				gateing = EnvGen.ar(Env.perc(0.001,1,1,'linear'),input);
 
-			   f = b * fund;
+				f = b * fund;
 
-			   buf1 = LocalBuf.new(SampleRate.ir, 1);
+				buf1 = LocalBuf.new(SampleRate.ir, 1);
 
 				sig = BufCombC.ar(buf1, Impulse.ar(f / TIRand.kr(1,5,trig)), 1/f, 4);
 
-			   buf2 = LocalBuf.new(SampleRate.ir, 1);
+				buf2 = LocalBuf.new(SampleRate.ir, 1);
 
-			   sig = sig + BufCombC.ar(buf2, Impulse.ar(f / TIRand.kr(1,5,trig)), 1/fund, 4);
+				sig = sig + BufCombC.ar(buf2, Impulse.ar(f / TIRand.kr(1,5,trig)), 1/fund, 4);
 
-			   sig = sig * gateing * (Lag.ar(b,0.01)*0.05);
+				sig = sig * gateing * (Lag.ar(b,0.01)*0.05);
 
-			   sig = RLPF.ar(
-			   	sig,
-			   	f*LFNoise1.kr(
+				sig = RLPF.ar(
+					sig,
+					f*LFNoise1.kr(
 						LFNoise0.kr(3).range(pulseRate/2,pulseRate*2)).range(1,7),
 					LFNoise1.kr(LFNoise0.kr(2).range(0.2,2)
 					).range(1,0.05)
-			   );
+				);
 
-			   dist = HPF.ar(LPF.ar((sig*80).distort,fund/4,3).distort,fund/6);
+				dist = HPF.ar(LPF.ar((sig*80).distort,fund/4,3).distort,fund/6);
 
-			   env = EnvGen.kr(Env.asr(0.01, 0.1, 2), gate, doneAction:2);
+				env = EnvGen.kr(Env.asr(0.01, 0.1, 2), gate, doneAction:2);
 
 				sig = sig + LPF.ar(sig,110,24).distort;
 
-			   sig = LeakDC.ar((sig+dist).distort * amp * 32);
+				sig = LeakDC.ar((sig+dist).distort * amp * 32);
 
-			   sig = sig.distort;
+				sig = sig.distort;
 
-			   Out.ar(out,sig*env*gateing*vol);
-		},
-		variants: (
-			one: [ fund: 110 ],
-			two: [ fund: 220 ],
-			four: [ fund: 440 ]
-		)).store
+				Out.ar(out,sig*env*gateing*vol);
+				},
+				variants: (
+					one: [ fund: 110 ],
+					two: [ fund: 220 ],
+					four: [ fund: 440 ]
+			)).store
 		);
 
 
@@ -1106,9 +1106,9 @@ Tarasque : ManticorePiece
 			lfo = LFNoise2.kr(LFNoise0.kr(Rand(0.5,1)).range(0.1,0.3)).range(freq*2,freq*20);
 
 			seq = Dshuf([
-					Dshuf([ 1, 1, 6/5 ],IRand(1,4)),
-					Dshuf([ 1, 1, 1, 1, 9/8 ],IRand(1,4)),
-					Dshuf([ 1, 1, 1, 7/8 ],IRand(1,4))
+				Dshuf([ 1, 1, 6/5 ],IRand(1,4)),
+				Dshuf([ 1, 1, 1, 1, 9/8 ],IRand(1,4)),
+				Dshuf([ 1, 1, 1, 7/8 ],IRand(1,4))
 				],
 				inf
 			);
@@ -1133,9 +1133,9 @@ Tarasque : ManticorePiece
 			var sig, env, seq, demand;
 
 			seq = Dshuf([
-					Dshuf([ 1, 1, 1, 5/3 ],IRand(1,4)),
-					Dshuf([ 1, 1, 1, 1, 7/4],IRand(1,4)),
-					Dshuf([ 1, 1, 16/9 ],IRand(1,4))
+				Dshuf([ 1, 1, 1, 5/3 ],IRand(1,4)),
+				Dshuf([ 1, 1, 1, 1, 7/4],IRand(1,4)),
+				Dshuf([ 1, 1, 16/9 ],IRand(1,4))
 				],
 				inf
 			) * 1.3;
@@ -1152,22 +1152,22 @@ Tarasque : ManticorePiece
 
 			sig = LeakDC.ar(sig);
 
-		},
-		(
-			"1:1": [ freq: 440 ],
-			"9:8": [ freq: 440 * 9/8 ],
-			"8:7": [ freq: 440 * 8/7 ]
-		),
-		decayTime: 0.13
+			},
+			(
+				"1:1": [ freq: 440 ],
+				"9:8": [ freq: 440 * 9/8 ],
+				"8:7": [ freq: 440 * 8/7 ]
+			),
+			decayTime: 0.13
 		);
 
 		this.rhythmSynthWrap("FPJam",{|argA,argB,trig,freq=440|
 			var sig, lfo, seq, demand;
 
 			seq = Dshuf([
-					Dshuf([ 1, 1, 1, 2 ],IRand(1,5)),
-					Dshuf([ 1, 1, 2, 1, 0.5],IRand(1,5)),
-					Dshuf([ 1, 1, 0.5 ],IRand(1,5))
+				Dshuf([ 1, 1, 1, 2 ],IRand(1,5)),
+				Dshuf([ 1, 1, 2, 1, 0.5],IRand(1,5)),
+				Dshuf([ 1, 1, 0.5 ],IRand(1,5))
 				],
 				inf
 			) * 1.3;
@@ -1189,22 +1189,22 @@ Tarasque : ManticorePiece
 			sig = HPF.ar(sig,freq*lfo);
 
 			sig = LeakDC.ar(sig * 10).distort;
-		},(
-			"1:1": [ freq: 440 ],
-			"10:9": [ freq: 440 * 10/9 ],
-			"9:8": [ freq: 440 * 9/8 ],
-			"8:7": [ freq: 440 * 8/7 ],
-			"7:6": [ freq: 440 * 7/6 ],
-			"13:11": [ freq: 440 * 13/11 ],
-			"6:5": [ freq: 440 * 6/5 ],
-			"5:4": [ freq: 440 * 5/4 ],
-			"4:3": [ freq: 440 * 4/3 ],
-			"3:2": [ freq: 440 * 3/2 ],
-			"5:3": [ freq: 440 * 5/3 ],
-			"7:4": [ freq: 440 * 7/4 ],
-			"16:9": [ freq: 440 * 16/9 ],
-			"9:5": [ freq: 440 * 9/5 ],
-			"bass": [ freq: 110 ],
+			},(
+				"1:1": [ freq: 440 ],
+				"10:9": [ freq: 440 * 10/9 ],
+				"9:8": [ freq: 440 * 9/8 ],
+				"8:7": [ freq: 440 * 8/7 ],
+				"7:6": [ freq: 440 * 7/6 ],
+				"13:11": [ freq: 440 * 13/11 ],
+				"6:5": [ freq: 440 * 6/5 ],
+				"5:4": [ freq: 440 * 5/4 ],
+				"4:3": [ freq: 440 * 4/3 ],
+				"3:2": [ freq: 440 * 3/2 ],
+				"5:3": [ freq: 440 * 5/3 ],
+				"7:4": [ freq: 440 * 7/4 ],
+				"16:9": [ freq: 440 * 16/9 ],
+				"9:5": [ freq: 440 * 9/5 ],
+				"bass": [ freq: 110 ],
 		));
 
 		// drones
@@ -1372,15 +1372,15 @@ Tarasque : ManticorePiece
 			buf = LocalBuf.new(SampleRate.ir * 0.1, 1);
 
 			sig = Latch.ar(
-					sig,
-					Impulse.ar(
-						BufDelayN.ar(
-							buf,
-							ZeroCrossing.ar(sig) * argA.linlin(0.0,1.0,0.125,0.5),
-							argB.linlin(0.0,1.0,0.001,0.1)
-						)
+				sig,
+				Impulse.ar(
+					BufDelayN.ar(
+						buf,
+						ZeroCrossing.ar(sig) * argA.linlin(0.0,1.0,0.125,0.5),
+						argB.linlin(0.0,1.0,0.001,0.1)
 					)
-				) + LFNoise0.kr(0.1);
+				)
+			) + LFNoise0.kr(0.1);
 
 			sig = DFM1.ar( sig, argA.linlin(0.0, 1.0, 50.0, 700.0), 0.75, type:1);
 
@@ -1465,78 +1465,78 @@ Tarasque : ManticorePiece
 		// effects
 		//////// TODO: make a wrapper for the evneloping on the effects?
 		(
-		SynthDef("CrunchVerb",{|in=100, out=100, vol=1, gate=1, gain=1|
-			var sig, env;
+			SynthDef("CrunchVerb",{|in=100, out=100, vol=1, gate=1, gain=1|
+				var sig, env;
 
-			env = EnvGen.kr(Env.asr(5,1,5,\sine), gate, doneAction:2);
+				env = EnvGen.kr(Env.asr(5,1,5,\sine), gate, doneAction:2);
 
-			sig = In.ar(in,1);
+				sig = In.ar(in,1);
 
-			sig = (sig*gain).softclip;
+				sig = (sig*gain).softclip;
 
-			sig = GVerb.ar(sig, 40, 0.45, 0.25, 0.1, 0, -2.dbamp, -23.dbamp, -33.dbamp, 40);
+				sig = GVerb.ar(sig, 40, 0.45, 0.25, 0.1, 0, -2.dbamp, -23.dbamp, -33.dbamp, 40);
 
-			sig = (sig*gain).distort * gain.reciprocal;
+				sig = (sig*gain).distort * gain.reciprocal;
 
-			sig = LeakDC.ar(sig);
+				sig = LeakDC.ar(sig);
 
-			sig = sig * Lag.kr(vol.linlin(0.0,1.0,0.0,0.3), 1);
+				sig = sig * Lag.kr(vol.linlin(0.0,1.0,0.0,0.3), 1);
 
-			Out.ar(out,Mix.new(sig)*env);
-		}, variants: (
-			gain1: [ gain: 1 ],
-			gain2: [ gain: 2 ],
-			gain3: [ gain: 3 ],
-			gain6: [ gain: 6 ],
-			gain12: [ gain: 12 ],
-			gain24: [ gain: 24 ]
-		)).store;
+				Out.ar(out,Mix.new(sig)*env);
+				}, variants: (
+					gain1: [ gain: 1 ],
+					gain2: [ gain: 2 ],
+					gain3: [ gain: 3 ],
+					gain6: [ gain: 6 ],
+					gain12: [ gain: 12 ],
+					gain24: [ gain: 24 ]
+			)).store;
 		);
 
 		(
-		SynthDef("DifferenceToneAmp",{|in=100, out=100, vol=1, gate=1, gain=64|
-			var sig, amp=1, env;
+			SynthDef("DifferenceToneAmp",{|in=100, out=100, vol=1, gate=1, gain=64|
+				var sig, amp=1, env;
 
-			env = EnvGen.kr(Env.asr(5,1,5,\sine), gate, doneAction:2);
+				env = EnvGen.kr(Env.asr(5,1,5,\sine), gate, doneAction:2);
 
-			sig = In.ar(in, 1);
+				sig = In.ar(in, 1);
 
-			sig = LPF.ar((sig*Lag.kr(gain,0.1)).distort.fold2,5000,amp);
+				sig = LPF.ar((sig*Lag.kr(gain,0.1)).distort.fold2,5000,amp);
 
-			sig = sig + LPF.ar(sig.distort, 330, gain);
+				sig = sig + LPF.ar(sig.distort, 330, gain);
 
-			sig = HPF.ar(sig,40);
+				sig = HPF.ar(sig,40);
 
-			sig = LeakDC.ar(sig * gain.linlin(15,64,1,0.3));
+				sig = LeakDC.ar(sig * gain.linlin(15,64,1,0.3));
 
-			Out.ar(out,sig*env*Lag.kr(vol,1));
-		}, variants: (
-			gain2: [ gain: 2 ],
-			gain3: [ gain: 3 ],
-			gain5: [ gain: 5 ],
-			gain15: [ gain: 15 ],
-			gain24: [ gain: 24 ],
-			gain48: [ gain: 48 ],
-			gain64: [ gain: 64 ],
-		)).store;
+				Out.ar(out,sig*env*Lag.kr(vol,1));
+				}, variants: (
+					gain2: [ gain: 2 ],
+					gain3: [ gain: 3 ],
+					gain5: [ gain: 5 ],
+					gain15: [ gain: 15 ],
+					gain24: [ gain: 24 ],
+					gain48: [ gain: 48 ],
+					gain64: [ gain: 64 ],
+			)).store;
 		);
 
 		(
-		SynthDef("InsideOut",{|in=100, out=100, vol=1, gate=1|
-			var sig, env;
+			SynthDef("InsideOut",{|in=100, out=100, vol=1, gate=1|
+				var sig, env;
 
-			env = EnvGen.kr(Env.asr(5,1,5,\sine), gate, doneAction:2);
+				env = EnvGen.kr(Env.asr(5,1,5,\sine), gate, doneAction:2);
 
-			sig = In.ar(in,1);
+				sig = In.ar(in,1);
 
-			sig = InsideOut.ar(sig, 0.05);
+				sig = InsideOut.ar(sig, 0.05);
 
-			sig = LeakDC.ar(sig);
+				sig = LeakDC.ar(sig);
 
-			sig = sig * Lag.kr(vol.linlin(0.0,1.0,0.0,0.5), 1);
+				sig = sig * Lag.kr(vol.linlin(0.0,1.0,0.0,0.5), 1);
 
-			Out.ar(out,Mix.new(sig)*env);
-		}).store;
+				Out.ar(out,Mix.new(sig)*env);
+			}).store;
 		);
 	}
 
@@ -1593,8 +1593,8 @@ Tarasque : ManticorePiece
 					sig = LeakDC.ar(sig);
 
 					Out.ar(out,Pan2.ar(sig*env*vol,panX,amp));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			},
 			\quad, {
@@ -1617,8 +1617,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [argA, argB, input]);
 
 					Out.ar(out,Pan4.ar(sig*env*tenv*vol,panX,panY,amp));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			},
 			\cube, {
@@ -1641,8 +1641,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [argA, argB, input]);
 
 					Out.ar(out,CubePan.ar(sig*env*tenv*vol,panX,panY,panZ,amp));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			}
 		);
@@ -1670,8 +1670,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [argA, argB, out]);
 
 					Out.ar(out,Pan2.ar(sig, panX, amp*vol*env));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			},
 			\quad, {
@@ -1693,8 +1693,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [argA, argB, out]);
 
 					Out.ar(out,Pan4.ar(sig, panX, panY, amp*vol*env));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			},
 			\cube, {
@@ -1716,8 +1716,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [argA, argB, out]);
 
 					Out.ar(out,CubePan.ar(sig*env*vol,panX,panY,panZ,amp));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			}
 		)
@@ -1747,8 +1747,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [input, argA, argB, out]);
 
 					Out.ar(out,Pan2.ar(sig, panX, amp*vol*env));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			},
 			\quad, {
@@ -1772,8 +1772,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [input, argA, argB, out]);
 
 					Out.ar(out,Pan4.ar(sig, panX, panY, amp*vol*env));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			},
 			\cube, {
@@ -1797,8 +1797,8 @@ Tarasque : ManticorePiece
 					sig = SynthDef.wrap(function, nil, [input, argA, argB, out]);
 
 					Out.ar(out,CubePan.ar(sig*env*vol,panX,panY,panZ,amp));
-				},
-				variants: variantList
+					},
+					variants: variantList
 				).store;
 			}
 		)
@@ -2080,7 +2080,7 @@ TarasqueDesktop
 			# oscAddr, objName, group, subGroup = msg;
 			args = msg.copyRange(4,msg.size-1);
 
-//			args.do{|item,i| (i.asString ++ ":" + item).postln };
+			//			args.do{|item,i| (i.asString ++ ":" + item).postln };
 
 			// cursors
 			if(subGroup.asString == "curs",{
@@ -2163,7 +2163,7 @@ TarasqueDesktop
 				this.updateObjects(objName);
 			});
 
-		});
+			});
 		);
 
 		// setSyncArg
@@ -2171,7 +2171,7 @@ TarasqueDesktop
 			var oscAddr, objName, argIndex, argValue, group, subGroup;
 
 			# oscAddr, objName, argIndex, argValue, group, subGroup = msg;
-//			msg.do{|item,i| (i.asString ++ ":" + item).postln };
+			//			msg.do{|item,i| (i.asString ++ ":" + item).postln };
 
 			// cursors
 			if(subGroup.asString == "curs", {
@@ -2191,24 +2191,24 @@ TarasqueDesktop
 				subGroup.asString.contains("d_") ||
 				subGroup.asString.contains("h_") ||
 				subGroup.asString.contains("a_"), {
-				switch(
-					argIndex,
-					0, { desktopObjects.at(objName).setX(argValue); this.updateObjects(objName); },
-					1, { desktopObjects.at(objName).setY(argValue); this.updateObjects(objName); },
-					2, {
-						desktopObjects.at(objName).selectedBy = argValue.asString;
+					switch(
+						argIndex,
+						0, { desktopObjects.at(objName).setX(argValue); this.updateObjects(objName); },
+						1, { desktopObjects.at(objName).setY(argValue); this.updateObjects(objName); },
+						2, {
+							desktopObjects.at(objName).selectedBy = argValue.asString;
 
-						if(argValue.asString == OSCthulhu.userName.asString,{
-							selectedObjects.add(objName);
-						},{
-							selectedObjects.remove(objName);
-						});
+							if(argValue.asString == OSCthulhu.userName.asString,{
+								selectedObjects.add(objName);
+								},{
+									selectedObjects.remove(objName);
+							});
 
-					}
-				);
+						}
+					);
 			});
 
-		});
+			});
 		);
 
 		// removeSyncObjects
@@ -2249,7 +2249,7 @@ TarasqueDesktop
 			droneList.remove(objName);
 			handleList.remove(objName);
 			areaList.remove(objName);
-		})
+			})
 		);
 	}
 
@@ -2363,7 +2363,7 @@ TarasqueDesktop
 
 		scrollView = [ScrollView(),stretch:6];
 
-		interface = UserView(scrollView[0], Rect(0,0,2000,2000));
+		interface = UserView(scrollView[0], Rect(0,0,1200,900));
 		interface.background_(Color.gray(0.5));
 		interface.clearOnRefresh = true;
 		interface.animate = true;
@@ -2391,12 +2391,12 @@ TarasqueDesktop
 								OSCthulhu.setSyncArg(key, 2, OSCthulhu.userName);
 							});
 						};
-					},{
-						selectedObjects.do{|obj|
-							if(desktopObjects.at(obj).selectedBy == OSCthulhu.userName.asString,{
-								OSCthulhu.setSyncArg(obj, 2, "none");
-							});
-						};
+						},{
+							selectedObjects.do{|obj|
+								if(desktopObjects.at(obj).selectedBy == OSCthulhu.userName.asString,{
+									OSCthulhu.setSyncArg(obj, 2, "none");
+								});
+							};
 					});
 				},
 				$j, {
@@ -2496,14 +2496,14 @@ TarasqueDesktop
 								OSCthulhu.setSyncArg(key, 2, "none");
 							});
 						});
-					},{
+						},{
 
-						if(selectionArea.area.containsPoint(obj.origin),{
-							if(obj.selectedBy == "none",{
-								selectedObjects.add(key);
-								OSCthulhu.setSyncArg(key, 2, OSCthulhu.userName);
+							if(selectionArea.area.containsPoint(obj.origin),{
+								if(obj.selectedBy == "none",{
+									selectedObjects.add(key);
+									OSCthulhu.setSyncArg(key, 2, OSCthulhu.userName);
+								});
 							});
-						});
 					});
 				};
 
@@ -2555,10 +2555,10 @@ TarasqueDesktop
 
 			if(type[0] == $m,{
 				this.addMacro(type, x, y);
-			},{
-				OSCthulhu.addSyncObject(
-					type ++ rrand(1000,9999), Manticore.group, type, [x,y,"none"]
-				);
+				},{
+					OSCthulhu.addSyncObject(
+						type ++ rrand(1000,9999), Manticore.group, type, [x,y,"none"]
+					);
 			});
 
 		});
@@ -2616,20 +2616,20 @@ TarasqueDesktop
 			},
 			/*
 			'OakStyleCombo',{
-				this.addMacroSyncObjects([
-					[ "p_Constant.eighth", Point( 1, -108 ) ],
-					[ "p_Constant.eighth", Point( 125, 0 ) ],
-					[ "p_Constant.eighth", Point( -3, 127 ) ],
-					[ "p_Constant.eighth", Point( -126, 1 ) ],
-					[ "r_OakStyle.one", Point( 0, -159 ) ],
-					[ "r_OakStyle.one", Point( -1, -58 ) ],
-					[ "r_OakStyle.two", Point( 126, -52 ) ],
-					[ "r_OakStyle.two", Point( 126, 48 ) ],
-					[ "r_OakStyle.four", Point( -3, 79 ) ],
-					[ "r_OakStyle.four", Point( -4, 175 ) ],
-					[ "r_OakStyle.four", Point( -125, -46 ) ],
-					[ "r_OakStyle.four", Point( -130, 47 ) ]
-				], x, y);
+			this.addMacroSyncObjects([
+			[ "p_Constant.eighth", Point( 1, -108 ) ],
+			[ "p_Constant.eighth", Point( 125, 0 ) ],
+			[ "p_Constant.eighth", Point( -3, 127 ) ],
+			[ "p_Constant.eighth", Point( -126, 1 ) ],
+			[ "r_OakStyle.one", Point( 0, -159 ) ],
+			[ "r_OakStyle.one", Point( -1, -58 ) ],
+			[ "r_OakStyle.two", Point( 126, -52 ) ],
+			[ "r_OakStyle.two", Point( 126, 48 ) ],
+			[ "r_OakStyle.four", Point( -3, 79 ) ],
+			[ "r_OakStyle.four", Point( -4, 175 ) ],
+			[ "r_OakStyle.four", Point( -125, -46 ) ],
+			[ "r_OakStyle.four", Point( -130, 47 ) ]
+			], x, y);
 			},
 			*/
 			'BasicGrooveCombo',{
@@ -2762,7 +2762,7 @@ TarasqueObjectWindow
 				});
 				{volSlider.value_( args[1] ); TarasqueServerItems.effectGroup.set("vol",args[1].asFloat); }.defer;
 			});
-		})
+			})
 		);
 
 		// setSyncArg
@@ -2771,7 +2771,7 @@ TarasqueObjectWindow
 
 			# oscAddr, objName, argIndex, argValue, group, subGroup = msg;
 
-//			msg.do{|item,i| (i.asString ++ ":" + item).postln };
+			//			msg.do{|item,i| (i.asString ++ ":" + item).postln };
 
 			if(subGroup.asString == "glbl", {
 				switch(
@@ -2791,7 +2791,7 @@ TarasqueObjectWindow
 					}
 				)
 			});
-		})
+			})
 		);
 	}
 
@@ -2823,11 +2823,11 @@ TarasqueObjectWindow
 		["h_ArgA", "h_ArgB"].do{|item|
 			argsLayout.add(
 				DragSource()
-					.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
-					.object_(item.asSymbol)
-					.string_(item.split($_)[1])
-					.dragLabel_(item.split($_)[1]),
-					1
+				.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
+				.object_(item.asSymbol)
+				.string_(item.split($_)[1])
+				.dragLabel_(item.split($_)[1]),
+				1
 			);
 		};
 
@@ -2840,11 +2840,11 @@ TarasqueObjectWindow
 		["a_pp", "a_p", "a_mp"].do{|item|
 			dynamicsP.add(
 				DragSource()
-					.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
-					.object_(item.asSymbol)
-					.string_(item.split($_)[1])
-					.dragLabel_(item.split($_)[1]),
-					1
+				.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
+				.object_(item.asSymbol)
+				.string_(item.split($_)[1])
+				.dragLabel_(item.split($_)[1]),
+				1
 			);
 		};
 
@@ -2855,11 +2855,11 @@ TarasqueObjectWindow
 		["a_mf", "a_f", "a_ff"].do{|item|
 			dynamicsF.add(
 				DragSource()
-					.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
-					.object_(item.asSymbol)
-					.string_(item.split($_)[1])
-					.dragLabel_(item.split($_)[1]),
-					1
+				.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
+				.object_(item.asSymbol)
+				.string_(item.split($_)[1])
+				.dragLabel_(item.split($_)[1]),
+				1
 			);
 		};
 
@@ -2889,10 +2889,10 @@ TarasqueObjectWindow
 		Tarasque.scoreObjects[Tarasque.scoreIndex].do{|item|
 			objList.layout.add(
 				DragSource()
-					.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
-					.object_(item.asSymbol)
-					.string_(item.split($_)[1].replace("."," "))
-					.dragLabel_(item.split($_)[1]),
+				.background_(TarasqueColorScheme.synthHandleActiveColor(item.split($_)[0]))
+				.object_(item.asSymbol)
+				.string_(item.split($_)[1].replace("."," "))
+				.dragLabel_(item.split($_)[1]),
 				1
 			);
 		};
@@ -2938,8 +2938,8 @@ TarasqueSelectionArea
 /////////// DesktopObjects ///////////
 
 /*
- * Represents/displays remote user's mouse cursors on the desktop
- */
+* Represents/displays remote user's mouse cursors on the desktop
+*/
 TarasqueCursor
 {
 	var <name, <>pos;
@@ -2969,8 +2969,8 @@ TarasqueCursor
 }
 
 /*
- * Superclass for all desktop object types
- */
+* Superclass for all desktop object types
+*/
 TarasqueDesktopObject
 {
 	var <>origin;		// center point
@@ -3018,8 +3018,8 @@ TarasqueDesktopObject
 	{|other|
 		if(origin.dist(other.origin) <= other.zoneRad,{
 			this.connect(other);
-		},{
-			this.disconnect(other);
+			},{
+				this.disconnect(other);
 		});
 	}
 
@@ -3058,9 +3058,9 @@ TarasqueDesktopObject
 	{
 		/*
 		if(inputBus != TarasqueServerItems.defaultBus,{
-			Pen.color = TarasqueColorScheme.synthHandleActiveColor(category);
+		Pen.color = TarasqueColorScheme.synthHandleActiveColor(category);
 		},{
-			Pen.color = TarasqueColorScheme.synthHandleInactiveColor(category);
+		Pen.color = TarasqueColorScheme.synthHandleInactiveColor(category);
 		});
 		*/
 		Pen.addArc(
@@ -3079,44 +3079,44 @@ TarasqueDesktopObject
 				TarasqueColorScheme.synthHandleActiveColor(category),
 				TarasqueColorScheme.synthZoneOuterColor(category).alpha_(0)
 			);
-		},{
-			Pen.fillRadialGradient(
-				origin,
-				origin,
-				5,
-				handleRad,
-				TarasqueColorScheme.synthHandleInactiveColor(category),
-				TarasqueColorScheme.synthZoneOuterColor(category).alpha_(0)
-			);
+			},{
+				Pen.fillRadialGradient(
+					origin,
+					origin,
+					5,
+					handleRad,
+					TarasqueColorScheme.synthHandleInactiveColor(category),
+					TarasqueColorScheme.synthZoneOuterColor(category).alpha_(0)
+				);
 		});
 		/*
 		Pen.color = TarasqueColorScheme.synthZoneCenterColor(category).alpha_(0.6);
 		Pen.addAnnularWedge(
-			origin,
-			handleRad*0.7,
-			handleRad,
-			0,
-			0.8pi
+		origin,
+		handleRad*0.7,
+		handleRad,
+		0,
+		0.8pi
 		);
 		Pen.fill;
 
 		Pen.color = TarasqueColorScheme.synthZoneOuterColor(category).alpha_(0.6);
 		Pen.addAnnularWedge(
-			origin,
-			handleRad*0.4,
-			handleRad*0.8,
-			0.8pi,
-			0.9pi
+		origin,
+		handleRad*0.4,
+		handleRad*0.8,
+		0.8pi,
+		0.9pi
 		);
 		Pen.fill;
 
 		Pen.color = TarasqueColorScheme.synthZoneCenterColor(category).alpha_(0.6);
 		Pen.addAnnularWedge(
-			origin,
-			handleRad*0.2,
-			handleRad*0.5,
-			1.7pi,
-			0.3pi
+		origin,
+		handleRad*0.2,
+		handleRad*0.5,
+		1.7pi,
+		0.3pi
 		);
 		Pen.fill;
 		*/
@@ -3132,19 +3132,19 @@ TarasqueDesktopObject
 		Pen.color = Color.black;
 		Pen.stringAtPoint(type.replace("."," "),Point(xOffset+1,yOffset+1));
 		if(selectedBy != "none",
-		{
-			Pen.color = Manticore.users.at(selectedBy.asSymbol).color;
-		},
-		{
-			Pen.color = Color.white;
+			{
+				Pen.color = Manticore.users.at(selectedBy.asSymbol).color;
+			},
+			{
+				Pen.color = Color.white;
 		});
 		Pen.stringAtPoint(type.replace("."," "),Point(xOffset,yOffset));
 	}
 }
 
 /*
- * Top level impulse generators
- */
+* Top level impulse generators
+*/
 TarasqueColotomyObject : TarasqueDesktopObject
 {
 	*new
@@ -3158,10 +3158,10 @@ TarasqueColotomyObject : TarasqueDesktopObject
 		outputBus = Bus.audio(Server.default,5);
 		/*
 		if(activeColotomy.at(type.asSymbol).isNil,{
-			activeColotomy.put(
-				type.asSymbol,
-				Synth.tail(TarasqueServerItems.colotomyGroup,type,["out",outputBus])
-			);
+		activeColotomy.put(
+		type.asSymbol,
+		Synth.tail(TarasqueServerItems.colotomyGroup,type,["out",outputBus])
+		);
 		});
 		*/
 		synth = Synth.tail(TarasqueServerItems.colotomyGroup,type,["out",outputBus]);	}
@@ -3184,8 +3184,8 @@ TarasqueColotomyObject : TarasqueDesktopObject
 }
 
 /*
- * Demand rate control generators
- */
+* Demand rate control generators
+*/
 TarasquePatternObject : TarasqueDesktopObject
 {
 	*new
@@ -3208,8 +3208,8 @@ TarasquePatternObject : TarasqueDesktopObject
 }
 
 /*
- * Trigger based audio synths
- */
+* Trigger based audio synths
+*/
 TarasqueRthymicObject : TarasqueDesktopObject
 {
 	*new
@@ -3272,30 +3272,30 @@ TarasqueRthymicObject : TarasqueDesktopObject
 					);
 
 				});
-			},{	// handle an old connection
+				},{	// handle an old connection
 
-				if(handle.origin.dist(origin) <= zoneRad,{  // set values
+					if(handle.origin.dist(origin) <= zoneRad,{  // set values
 
-					switch(i,
-						0, { synth.set("argA", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); },
-						1, { synth.set("argB", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); }
-					);
+						switch(i,
+							0, { synth.set("argA", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); },
+							1, { synth.set("argB", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); }
+						);
 
-				},{
+						},{
 
-					if(slot.value === handle,{  // else disconnect if it was connected
-						controlConnections[i] = nil;
+							if(slot.value === handle,{  // else disconnect if it was connected
+								controlConnections[i] = nil;
+							});
+
 					});
-
-				});
 			});
 		};
 	}
 }
 
 /*
- * Constant audio synths
- */
+* Constant audio synths
+*/
 TarasqueDroneObject : TarasqueDesktopObject
 {
 	*new
@@ -3358,30 +3358,30 @@ TarasqueDroneObject : TarasqueDesktopObject
 					);
 
 				});
-			},{	// handle an old connection
+				},{	// handle an old connection
 
-				if(handle.origin.dist(origin) <= zoneRad,{  // set values
+					if(handle.origin.dist(origin) <= zoneRad,{  // set values
 
-					switch(i,
-						0, { synth.set("argA", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); },
-						1, { synth.set("argB", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); }
-					);
+						switch(i,
+							0, { synth.set("argA", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); },
+							1, { synth.set("argB", handle.origin.dist(origin).linlin(0.0,zoneRad,1.0,0.0) ); }
+						);
 
-				},{
+						},{
 
-					if(slot.value === handle,{  // else disconnect if it was connected
-						controlConnections[i] = nil;
+							if(slot.value === handle,{  // else disconnect if it was connected
+								controlConnections[i] = nil;
+							});
+
 					});
-
-				});
 			});
 		};
 	}
 }
 
 /*
- * Control handles for parameter modulation
- */
+* Control handles for parameter modulation
+*/
 TarasqueControlObject : TarasqueDesktopObject
 {
 
@@ -3453,7 +3453,7 @@ TarasqueAreaObject : TarasqueDesktopObject
 ~mouse = 0@0;
 
 OSCthulhu.onAddSyncObject(\test, {|msg|
-	[ "\"" ++ msg[3] ++ "\"", (Point(msg[4], msg[5]) - ~mouse)].postln;
+[ "\"" ++ msg[3] ++ "\"", (Point(msg[4], msg[5]) - ~mouse)].postln;
 });
 )
 
@@ -3461,7 +3461,44 @@ OSCthulhu.onAddSyncObject(\test, {|msg|
 [
 // posts go here
 ].do{|entry, i|
-	[ entry[0], Point( 341, 246 ) + entry[1]].postln;	// change the Point to be the center
+[ entry[0], Point( 341, 246 ) + entry[1]].postln;	// change the Point to be the center
 };
 )
 */
+
+/////////////////
+TarasqueII
+{
+	var audioServer;
+
+	*new
+	{
+		^super.new().init();
+	}
+
+	*initClass
+	{
+		ManticoreII.registerPiece('Tarasque');	// register Tarasque with Manticore
+	}
+
+	init
+	{
+		Manticore.group = "Trsq";
+
+		Tarasque.storeSynthDefs;
+
+		OSCthulhu.changePorts(57120);
+		OSCthulhu.login(Manticore.group);
+
+		OSCthulhu.addSyncObject(
+			"Trsq_Global",
+			Manticore.group,
+			"glbl",
+			[
+				0,		// scoreIndex
+				1.0		// volume
+			]
+		);
+	}
+
+}

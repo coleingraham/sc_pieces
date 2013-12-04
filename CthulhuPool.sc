@@ -129,7 +129,7 @@ CthulhuPoolMacroWindow
 	}
 	getView
 	{
-		var macroListView, addBufferBtn, addMacroBtn, cmdPeriodBtn;
+		var macroListView, addBufferBtn, addByteBeatBtn, addMacroBtn, cmdPeriodBtn;
 
 		macroListView = View();
 		/*
@@ -156,6 +156,23 @@ CthulhuPoolMacroWindow
 			)
 		});
 
+		addByteBeatBtn = Button(macroListView);
+		addByteBeatBtn.states_([
+			["Add ByteBeat Buffer",Color.white,Color.green(0.35)]
+		]);
+		addByteBeatBtn.action_({|btn|
+			OSCthulhu.addSyncObject(
+				"bb" ++ rrand(1000,9999),
+				Manticore.group,
+				"bb",
+				[
+					"none",
+					"",
+					0
+				]
+			)
+		});
+
 		addMacroBtn = Button(macroListView);
 		addMacroBtn.states_([
 			["New Macro",Color.white,Color.green(0.35)]
@@ -171,6 +188,7 @@ CthulhuPoolMacroWindow
 		macroListView.layout_(
 			VLayout(
 				addBufferBtn,
+				addByteBeatBtn,
 				addMacroBtn,
 				StaticText().string_("Macros"),
 				macroList,
@@ -331,6 +349,21 @@ CthulhuPoolBufferWindow
 					});
 				});
 
+				if(subGroup.asString == "bb", {
+					if(buffers.at(objName.asString).isNil,{
+						buffers.put(
+							objName.asString,
+							CthulhuPoolByteBeatBuffer.new(
+								objName.asString,
+								args[0].asString,
+								args[1].asString,
+								args[2].asInteger
+							)
+						);
+						{scrollView.canvas = this.populateBuffers();}.defer;
+					});
+				});
+
 			});
 		);
 
@@ -348,6 +381,15 @@ CthulhuPoolBufferWindow
 						2, { buffers.at(objName.asString).setRunCount(argValue); }
 					);
 				});
+
+				if(subGroup.asString == "bb", {
+					switch(
+						argIndex,
+						0, { buffers.at(objName.asString).setSelectedBy(argValue.asString); },
+						1, { buffers.at(objName.asString).setCode(argValue.asString); },
+						2, { buffers.at(objName.asString).setRunCount(argValue); }
+					);
+				});
 			});
 		);
 
@@ -358,6 +400,11 @@ CthulhuPoolBufferWindow
 				# oscAddr, objName, group, subGroup = msg;
 
 				if(subGroup.asString == "b", {
+					buffers.removeAt(objName.asString);
+					{scrollView.canvas = this.populateBuffers();}.defer;
+				});
+
+				if(subGroup.asString == "bb", {
 					buffers.removeAt(objName.asString);
 					{scrollView.canvas = this.populateBuffers();}.defer;
 				});
@@ -800,5 +847,100 @@ CthulhuPoolPostWindow
 			postWin.string = postWin.string ++ "\n" ++ post;
 			postWin.select(postWin.string.size-2,0);
 		}.defer;
+	}
+}
+
+CthulhuPoolByteBeatBuffer
+{
+	var bufferName, selectedBy, code, runCount;
+	var view, codeField, editBtn, execBtn, closeBtn, bufferLengthText, synthVol;
+
+	*new
+	{|bufferName, selectedBy="none", code="", runCount=0|
+		^super.newCopyArgs(bufferName, selectedBy, code, runCount);
+	}
+
+	getView
+	{
+		view = View(bounds:Rect(100,100,400,50));
+		view.minHeight_(100);
+		view.maxHeight_(100);
+		view.background_(Color.rand);
+
+		bufferLengthText = StaticText().string_("Chars: 0");
+
+		codeField = TextField();
+
+		// close the buffer
+		closeBtn = Button(view,20@20);
+		closeBtn.states_([
+			["X",Color.white,Color.gray(0.35)]
+		]);
+		closeBtn.action_({|btn|
+			OSCthulhu.removeSyncObject(bufferName);
+		});
+
+		// run button
+		execBtn = Button(view,20@40);
+
+		if(selectedBy == "none",{
+			execBtn.states_([["Run",Color.white,Color.red(0.8)]]);
+			},{
+				execBtn.states_([["Run",Color.gray(0.5),Color.red(0.5)]]);
+		});
+
+		if(selectedBy == OSCthulhu.userName.asString,{
+			execBtn.states_([["Run",Color.white,Color.red(0.8)]]);
+		});
+
+		execBtn.action_({|btn|
+			if(selectedBy == "none",{
+				OSCthulhu.setSyncArg(bufferName,2,runCount + 1);
+			});
+
+			if(selectedBy == OSCthulhu.userName.asString,{
+				OSCthulhu.setSyncArg(bufferName,2,runCount + 1);
+			});
+		});
+
+		// edit button
+		editBtn = Button(view,20@40);
+		editBtn.states_([
+			["Edit",Color.white,Color.black]/*,
+			["Release",Color.white,Color.black]*/
+		]);
+
+		editBtn.action_({|btn|
+
+			if(selectedBy == "none",{
+				OSCthulhu.setSyncArg(bufferName,0,OSCthulhu.userName);
+			});
+
+			if(selectedBy == OSCthulhu.userName.asString,{
+				OSCthulhu.setSyncArg(bufferName,0,"none");
+				OSCthulhu.setSyncArg(bufferName,1,codeField.string);
+			});
+
+		});
+
+		// add to view
+		view.layout_(
+			VLayout(
+				HLayout(
+					[bufferLengthText,stretch:16],
+					[editBtn, stretch:16],
+					[execBtn, stretch:16],
+					[closeBtn, stretch:1]
+				),
+				codeField
+			)
+		);
+
+		^view;
+	}
+
+	free
+	{
+
 	}
 }
