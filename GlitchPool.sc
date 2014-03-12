@@ -18,7 +18,7 @@ GlitchPool {
 		OSCthulhu.changePorts(portlist);
 		OSCthulhu.login("GP");
 
-		GlitchPoolHUD();
+		// GlitchPoolHUD();
 	}
 
 	* setupOSClisteners {
@@ -27,19 +27,20 @@ GlitchPool {
 			OSCthulhu.onUserName("setOSCthulhuUserName",{|msg|
 
 				OSCthulhu.userName = msg[1];
-				OSCthulhu.addSyncObject(OSCthulhu.userName,"GP","u",["",0]);
+				// OSCthulhu.addSyncObject(OSCthulhu.userName,"GP","u",["",0]);
+				OSCthulhu.addSyncObject(OSCthulhu.userName,"GP","u",[""]);
 
 				// broadcast interpreted code to all GlitchPool users
 				thisProcess.interpreter.codeDump_({|code|
-					var runCount;
+					// var runCount;
 					// prevent any code using .unixCmd
 					if(code.find("unixCmd").isNil &&
 						code.find("interpret").isNil &&
 						code.find("compile").isNil,{
-						runCount = GlitchPool.users[OSCthulhu.userName.asString].runCount.asInteger;
-						GlitchPool.users[OSCthulhu.userName.asString].runCount_((runCount+1).asInteger);
-						OSCthulhu.setSyncArg(OSCthulhu.userName,0,code.asString);
-						OSCthulhu.setSyncArg(OSCthulhu.userName,1,(runCount+1).asInteger);
+							// runCount = GlitchPool.users[OSCthulhu.userName.asString].runCount.asInteger;
+							// GlitchPool.users[OSCthulhu.userName.asString].runCount_((runCount+1).asInteger);
+							OSCthulhu.setSyncArg(OSCthulhu.userName,0,code.asString);
+							// OSCthulhu.setSyncArg(OSCthulhu.userName,1,(runCount+1).asInteger);
 						},{
 							"GlitchPool will not send that!!!".warn;
 					});
@@ -47,11 +48,11 @@ GlitchPool {
 
 				// broadcast CmdPeriod to all GlitchPool users
 				CmdPeriod.add({
-					var runCount;
-					runCount = GlitchPool.users[OSCthulhu.userName.asString].runCount.asInteger;
-					GlitchPool.users[OSCthulhu.userName.asString].runCount_((runCount+1).asInteger);
+					// var runCount;
+					// runCount = GlitchPool.users[OSCthulhu.userName.asString].runCount.asInteger;
+					// GlitchPool.users[OSCthulhu.userName.asString].runCount_((runCount+1).asInteger);
 					OSCthulhu.setSyncArg(OSCthulhu.userName,0,"CmdPeriod.run;");
-					OSCthulhu.setSyncArg(OSCthulhu.userName,1,(runCount+1).asInteger);
+					// OSCthulhu.setSyncArg(OSCthulhu.userName,1,(runCount+1).asInteger);
 				});
 			})
 		);
@@ -68,7 +69,8 @@ GlitchPool {
 					if(subGroup.asString == "u",{
 						users.put(
 							objName.asString,
-							GlitchPoolUser(objName.asString,args[0].asString,args[1].asInteger)
+							// GlitchPoolUser(objName.asString,args[0].asString,args[1].asInteger)
+							GlitchPoolUser(objName.asString,args[0].asString)
 						);
 					});
 
@@ -80,7 +82,7 @@ GlitchPool {
 		osc.add(
 			OSCthulhu.onSetSyncArg("setSyncArg",{|msg, time, addr, recvPort|
 				var oscAddr, objName, argIndex, argValue, group, subGroup;
-				var runCount;
+				// var runCount;
 				# oscAddr, objName, argIndex, argValue, group, subGroup = msg;
 
 				// check if this is for GlitchPool and if the message is coming from OSCthulhu
@@ -93,21 +95,30 @@ GlitchPool {
 								// prevent any code using .unixCmd
 								if(argValue.asString.find("unixCmd").isNil &&
 									argValue.asString.find("interpret").isNil &&
-									argValue.asString.find("compile").isNil,{
-									GlitchPool.users[objName.asString].code = argValue.asString;
+									argValue.asString.find("compile").isNil &&
+									argValue.asString != GlitchPool.users[objName.asString].code,{
+										GlitchPool.users[objName.asString].code = argValue.asString;
+										if(objName.asString != OSCthulhu.userName.asString,{
+											"\n<%>: ".format(objName.asString).post;
+											GlitchPool.users[objName.asString].code.asString.postln;
+											"".postln;
+											GlitchPool.users[objName.asString].code.asString.interpret;
+										});
 								});
 							},
 							1, {
+								/*
 								runCount = GlitchPool.users[objName.asString].runCount.asInteger;
 
 								if(argValue.asInteger > runCount,{
-									"\n<%>: ".format(objName.asString).post;
-									GlitchPool.users[objName.asString].code.asString.postln;
-									"".postln;
-									GlitchPool.users[objName.asString].code.asString.interpret;
+								"\n<%>: ".format(objName.asString).post;
+								GlitchPool.users[objName.asString].code.asString.postln;
+								"".postln;
+								GlitchPool.users[objName.asString].code.asString.interpret;
 								});
 
 								GlitchPool.users[objName.asString].runCount = argValue.asInteger;
+								*/
 							}
 						);
 					});
@@ -120,7 +131,7 @@ GlitchPool {
 	}
 
 	* free {
-		GlitchPoolHUD.close;
+		// GlitchPoolHUD.close;
 		osc.collect({|def| def.permanent_(false); def.free; });
 		OSCthulhu.cleanup("GP");
 		thisProcess.interpreter.codeDump = nil;
